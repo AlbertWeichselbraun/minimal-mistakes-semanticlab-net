@@ -114,9 +114,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/AlbertWeichselbraun"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/a1bert"
 
 # Site Footer
 footer:
@@ -135,7 +135,7 @@ footer:
       url: "https://github.com/AlbertWeichselbraun"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://gitlab.com/a1bert"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
