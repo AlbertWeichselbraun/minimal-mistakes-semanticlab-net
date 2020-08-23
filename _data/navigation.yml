@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Research Blog"
+    url: https://blog.semanticlab.net
+  - title: "Thesis"
+    url: /thesis
+  - title: "Categories"
+    url: /categories
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"

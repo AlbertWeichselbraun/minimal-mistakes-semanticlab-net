@@ -1,0 +1,29 @@
+---
+title: Categories
+layout: single
+permalink: /categories/
+header:
+  image: /assets/images/semanticlab-header.png
+  caption: semanticlab.net - linux &amp; programming
+---
+
+
+{% assign sorted_categories = (site.categories | sort:1) %}
+<ul class="category-box">
+	{% for category in sorted_categories %}
+		{% assign c = category | first %}
+		{% assign posts = category | last %}
+		<li><a href="#{{ c | downcase }}">{{ c }} <span class="size">({{ posts.size }})</span></a></li>
+	{% endfor %}
+</ul>
+
+{% include base_path %}
+{% include group-by-array collection=site.posts field="categories" %}
+
+{% for category in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h4 id="{{ category | slugify }}" class="archive__subtitle">{{ category }}</h4>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
