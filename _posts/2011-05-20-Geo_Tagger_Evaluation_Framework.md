@@ -2,7 +2,7 @@
 title: Geo Tagger Evaluation Framework
 alias: index.php/Geo_Tagger_Evaluation_Framework/
 layout: single
-categories: nlp
+categories: NLP
 ---
 
 The *Geo Tagger Evaluation Framework* (geoTEF) provides an open

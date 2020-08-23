@@ -1,7 +1,7 @@
 --- 
 title: Deploying third-party artifacts to a local repository with WebDAV
 layout: single
-categories: ["maven", "java"]
+categories: ["Maven", "Java"]
 --- 
 
 This guide outlines how to deploy third party jars to a local repository over WebDAV. Using WebDAV requires 

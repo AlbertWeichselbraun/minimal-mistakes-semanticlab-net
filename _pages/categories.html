@@ -9,13 +9,12 @@ header:
 
 
 {% assign sorted_categories = (site.categories | sort:1) %}
-<ul class="category-box">
-	{% for category in sorted_categories %}
-		{% assign c = category | first %}
-		{% assign posts = category | last %}
-		<li><a href="#{{ c | downcase }}">{{ c }} <span class="size">({{ posts.size }})</span></a></li>
-	{% endfor %}
-</ul>
+
+{% for category in sorted_categories %}
+	{% assign c = category | first %}
+	{% assign posts = category | last %}
+	<a class="btn btn--inverse" href="#{{ c | downcase }}">{{ c }} <span class="size">({{ posts.size }})</span></a>
+{% endfor %}
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="categories" %}

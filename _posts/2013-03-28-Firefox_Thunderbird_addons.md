@@ -2,7 +2,7 @@
 title: Firefox/Thunderbird addons
 alias: index.php/Firefox/Thunderbird_addons/
 layout: single
-categories: ["linux", "firefox", "thunderbird"]
+categories: ["Linux", "Firefox", "Thunderbird"]
 ---
 A list of useful Firefox and Thunderbird plugins
 

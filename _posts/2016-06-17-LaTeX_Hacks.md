@@ -2,7 +2,7 @@
 title: LaTeX Hacks
 layout: single
 alias: /index.php/LaTeX_Hacks
-categories: latex
+categories: Latex
 excerpt: A list of useful hacks for working with LaTeX.
 
 ---

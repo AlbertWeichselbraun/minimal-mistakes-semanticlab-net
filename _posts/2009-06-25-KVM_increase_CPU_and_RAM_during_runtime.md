@@ -2,7 +2,7 @@
 title: KVM increase CPU and RAM during runtime
 alias: index.php/KVM_increase_CPU_and_RAM_during_runtime/
 layout: single
-categories: ["virtualization", "sysadmin", "linux"]
+categories: ["Virtualization", "Sysadmin", "Linux"]
 ---
 
 KVM - Increase CPU and RAM during runtime

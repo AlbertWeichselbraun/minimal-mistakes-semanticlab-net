@@ -1,7 +1,7 @@
 --- 
 title: Installing virtual appliances and VirtualBox
 layout: single
-categories: virtualization
+categories: Virtualization
 --- 
 
 How to install virtual appliances on VirtualBox.

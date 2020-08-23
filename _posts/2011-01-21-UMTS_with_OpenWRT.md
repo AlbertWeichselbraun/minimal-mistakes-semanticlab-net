@@ -2,7 +2,7 @@
 title: UMTS with OpenWRT
 alias: index.php/UMTS_with_OpenWRT/
 layout: single
-categories: ["sysadmin", "linux", "openwrt"]
+categories: ["Sysadmin", "Linux", "OpenWrt"]
 ---
 
 These are some random notes on how to use a ZTE MF180 with OpenWRT and

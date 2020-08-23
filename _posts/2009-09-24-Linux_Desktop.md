@@ -2,7 +2,7 @@
 title: Linux Desktop
 alias: index.php/Linux_Desktop/
 layout: single
-categories: linux
+categories: Linux
 ---
 
 This page introduces configuration tweaks for your linux desktop

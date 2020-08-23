@@ -2,7 +2,7 @@
 title: Handling Disk Errors
 layout: single
 alias: index.php/Handling_Disk_Errors
-categories: sysadmin
+categories: Sysadmin
 ---
 
 You can verify that your hard disk does not contain any defect sectors

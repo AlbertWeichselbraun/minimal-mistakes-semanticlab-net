@@ -2,7 +2,7 @@
 title: PostgreSQL PgPlSQL Hacks
 permalink: index.php/PostgreSQL_PgPlSQL_Hacks/
 layout: single
-categories: postgres
+categories: Postgres
 ---
 
 Moving rows between 2 tables

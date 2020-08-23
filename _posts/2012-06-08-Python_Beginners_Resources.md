@@ -2,7 +2,7 @@
 title: Python Beginners Resources
 alias: index.php/Python_Beginners_Resources/
 layout: single
-categories: python
+categories: Python
 ---
 
 Recommended Readings for Python Newbies

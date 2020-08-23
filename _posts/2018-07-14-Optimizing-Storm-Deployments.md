@@ -1,7 +1,7 @@
 --- 
 title: Optimizing Apache Storm Topologies
 layout: single
-categories: ["linux", "storm", "java"]
+categories: ["Linux", "Storm", "Java"]
 --- 
 
 This article summarizes hints for optimizing and deploying Apache Storm topologies.

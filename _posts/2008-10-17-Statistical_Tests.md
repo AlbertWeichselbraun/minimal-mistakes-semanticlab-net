@@ -1,7 +1,7 @@
 ---
 title: Statistical Tests
 layout: single
-categories: statistic
+categories: Statistic
 ---
 
 Binary Data

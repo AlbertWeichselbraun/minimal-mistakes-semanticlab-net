@@ -2,7 +2,7 @@
 title: Python Code Style
 alias: index.php/Python_Code_Style/
 layout: single
-categories: python
+categories: Python
 excerpt: Guidelines for writing efficient Python code.
 ---
 {% include toc %}

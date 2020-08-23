@@ -4,7 +4,7 @@ permalink: wiki/Encryption_hacks/
 layout: single
 alias: /index.php/Encryption_hacks
 excerpt: Secure encryption settings for Apache, Firefox, SSH and LUKS.
-categories: ["linux", "sysadmin", "encryption"]
+categories: ["Linux", "Sysadmin", "Encryption"]
 tags: 
 - luks
 - encryption

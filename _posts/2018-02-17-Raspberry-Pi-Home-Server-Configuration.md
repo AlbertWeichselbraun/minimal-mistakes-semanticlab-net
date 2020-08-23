@@ -1,7 +1,7 @@
 --- 
 title: Headless Seafile server on a Raspberry Pi 2 with dynamic DNS
 layout: single
-categories: ["linux", "seafile", "raspberry pi"]
+categories: ["Linux", "Seafile", "Raspberry PI"]
 --- 
 
 The Raspberry Pi is operated from at home keeping noise and power consumption in mind.

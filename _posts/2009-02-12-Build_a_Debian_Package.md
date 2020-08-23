@@ -1,7 +1,7 @@
 ---
 title: Build a Debian Package
 layout: single
-categories: sysadmin
+categories: Sysadmin
 ---
 
 In this tutorial we will create a Debian package for `lesslog`. If this

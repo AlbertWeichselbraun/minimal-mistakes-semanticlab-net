@@ -1,7 +1,7 @@
 ---
 title: Linux Desktop Search
 layout: single
-categories: linux
+categories: Linux
 ---
 
 This page summarizes some resources committed to Linux desktop search:

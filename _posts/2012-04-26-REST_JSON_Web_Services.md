@@ -2,7 +2,7 @@
 title: REST/JSON Web Services
 alias: index.php/REST/JSON_Web_Services/
 layout: single
-categories: ["java", "rest"]
+categories: ["Java", "REST"]
 ---
 
 This page provides information on how to implement JSON/REST based Web

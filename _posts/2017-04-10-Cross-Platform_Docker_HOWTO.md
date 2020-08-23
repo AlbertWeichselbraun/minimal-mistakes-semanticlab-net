@@ -1,7 +1,7 @@
 --- 
 title: Creating cross-platform portable Virtual Machines with Docker
 layout: single
-categories: virtualization
+categories: Virtualization
 --- 
 
 1. create a docker virtualbox machine and connect to it 

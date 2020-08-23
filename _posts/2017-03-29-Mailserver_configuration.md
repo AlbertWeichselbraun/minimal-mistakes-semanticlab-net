@@ -1,7 +1,7 @@
 --- 
 title: Mailserver configuration
 layout: single
-categories: sysadmin
+categories: Sysadmin
 --- 
 
 This page provides information on how to make your mailserver more resiliant against mail abuse.

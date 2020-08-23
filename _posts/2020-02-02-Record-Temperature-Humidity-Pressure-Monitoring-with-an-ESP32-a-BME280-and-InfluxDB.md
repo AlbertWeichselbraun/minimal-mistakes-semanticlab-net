@@ -1,7 +1,7 @@
 --- 
 title: Record Temperature, Humidity and Pressure with an ESP32, a Bosh BME280 sensor and InfluxDB
 layout: single
-categories: ["linux", "IoT", "ESP32", "BME280", "sensor", InfluxDB]
+categories: ["Linux", "IoT", "ESP32", "BME280", "Sensor", InfluxDB]
 --- 
 
 ## Install InfluxDB and Grafana at your server and create a database

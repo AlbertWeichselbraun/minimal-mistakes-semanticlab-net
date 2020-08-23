@@ -3,8 +3,8 @@ status: published
 published: true
 title: Network-bound disk encryption in Ubuntu 20.04 (Focal Fossa) - Booting servers with an encrypted root file system without user interaction.
 categories:
-- sysadmin
-- encryption
+- Sysadmin
+- Encryption
 tags:
 - tang
 - clevis

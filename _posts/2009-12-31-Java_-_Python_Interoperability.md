@@ -1,7 +1,7 @@
 ---
 title: Java - Python Interoperability
 layout: single
-categories: ["python", "java"]
+categories: ["Python", "Java"]
 ---
 
 Compressing/Decompressing data streams to be compatible with `java.util.zip.GZIPOutputStream`, `java.util.zip.GZIPInputStream` compressed data.

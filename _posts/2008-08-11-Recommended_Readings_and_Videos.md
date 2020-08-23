@@ -1,7 +1,7 @@
 ---
 title: Recommended Readings and Videos
 layout: single
-categories: ["linux", "programming", "sysadmin"]
+categories: ["Linux", "Programming", "Sysadmin"]
 ---
 
 This page presents you recommended material for programming and working

@@ -1,7 +1,7 @@
 ---
 title: PostgreSQL
 layout: single
-categories: postgres
+categories: Postgres
 ---
 
 Large Scale Deployments

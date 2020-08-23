@@ -1,7 +1,7 @@
 ---
 title: Meta Data Extraction with Jhove
 layout: single
-categories: nlp
+categories: NLP
 ---
 
 Jhove (Jstore/Havard Object Validation Environment) is a tool that
