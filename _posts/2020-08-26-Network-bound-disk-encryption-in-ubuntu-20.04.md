@@ -56,23 +56,65 @@ TieDkMgbVKzmXl-uyOfIa0U30lo
 ``` 
 
 ## Host with the encrypted LUKS device(s)
-Install Clevis on the host system and then use `clevis luks bind` for binding the device to the Tang server. You need to verify whether the signing key's fingerprint matches 
-the one shown on the server and afterwards can agree to binding the LUKS device. Afterwards, Clevis can be used to unlock the device.
-
-Clevis provides plugins for initramfs, dracut, systemd and udisk2 to automize the unlocking process.
+Install Clevis on the host system and then use `clevis luks bind` for binding the device to the Tang server. Clevis will ask you to verify the signing key's fingerprint. Afterwards, Clevis can be used to unlock the device.
 
 ```bash
 # install clevis
-apt install clevis clevis-luks clevis-initramfs clevis-udisks2
+apt install clevis clevis-luks
 
 # ensure that the device (e.g. vda1) is encrypted and that the tang server is working
 cryptsetup luksDump /dev/vda1            # just to be sure that we encrypt the right disk ;)
 curl http://192.168.122.1/adv            # verify that the tang server yields a response
 
-# enable clevis tang decryption for luks
+# enable clevis tang decryption for the given LUKS device
 clevis luks bind -d /dev/vda1 tang '{"url": "http://192.168.122.1"}'
-update-initramfs -u -k 'all'            # reinitialize initramfs to support automatic unlocking of the root device.
 ```
+
+Clevis provides plugins for initramfs, dracut, systemd and udisk2 to automize the unlocking process.
+
+
+### Automatically unlocking a root device with Clevis
+
+Once Clevis support has been enabled for an encrypted root file system, it can be automatically unlocked by installing the corresponding clevis plugin and rebuilding initramfs.
+
+```bash
+# insall the necessary clevis plugin
+apt install clevis-initramfs
+
+# reinitialize initramfs to support automatic unlocking of the root device.
+update-initramfs -u -k 'all'            
+```
+
+## Automatic unlocking of non-root devices with Clevis
+
+Automatic unlocking of non-root devices via systemd is supported by the `clevis-systemd` plugin.
+
+```bash
+apt install clevis-system
+```
+
+Afterwards the encrypted non-root devices need to be added to `/etc/crypttab` with the `_netdev` option. Crypttab entries consist of the following four columns:
+- `target`: the name to be used for the mapped (i.e. decrypted) device
+- `source device`: the name of the corresponding encrypted source device
+- `key file`: `none`, since we do not specify a key
+- `options`: the column must be set to `_netdev` so that systemd is able to automatically mount the device using the `clevis-systemd` plugin.
+
+``` 
+encrypted_home	/dev/vdb  none  _netdev
+encrypted_opt   /dev/vdc  none  _netdev
+```
+
+Afterwards, the devices can be added to `/etc/fstab` for automatic mounting:
+
+```
+/dev/mapper/encrypted_home  /home   xfs  defaults,_netdev  0 0
+/dev/mapper/encrypted_opt   /opt    xfs  defaults,_netdev  0 0
+``` 
+Again it is important to add the `_netdev` option to ensure that systemd is able to recognize and automatically mount the encrypted device.
+
+{: .notice--danger}
+**Warning:** To the best of my knowledge it is not possible to mount an encrypted `/var` partition using this method, since systemd relies on `/var` for its networking configuration.
+
 
 
 # Resources
